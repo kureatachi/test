@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.py",  // Adjust this based on your main Python file
+        "use": "@now/python"
+      }
+    ]
+  }
+  
