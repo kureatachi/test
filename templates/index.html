@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 50%; /* Adjust the percentage based on your preference */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Kurea's Design Portfolio</h1>
+    <img src="static/images/dfgnagoya2.png" alt="Design for Daifugo Renmei"> 
+    <h2>Current Time</h2>
+<p>Japan: <span id="timeJapan"></span></p>
+<p>USA(Los Angeles): <span id="timeUSA"></span></p>
+
+<script>
+function updateClock() {
+    var nowJapan = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
+    var nowUSA = new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"});
+
+    document.getElementById('timeJapan').innerHTML = nowJapan;
+    document.getElementById('timeUSA').innerHTML = nowUSA;
+}
+
+setInterval(updateClock, 1000);
+updateClock(); 
+</script>
+    <p><h2><strong>Yonsei University</strong> Information and Interaction Design.</h2> </p> <p>Amechan Kuuchan rocks!</p>
+</body>
+</html>
